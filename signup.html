@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/823891222a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<span class="d-none" id="username">Welcome</span>
+
+
+<div class="container my-5 text-center">
+  <div class="card m-auto w-75 p-5" id="card">
+    <h1>Smart Login System</h1>
+    <input oninput="validateSignUp(this)" id="signUpName" class="form-control my-3 text-light" placeholder="Enter your name" type="text">
+    <span class="text-danger d-none">Username must be 3–15 characters</span>
+    <input oninput="validateSignUp(this)" id="signUpEmail" class="form-control text-light" placeholder="Enter your email" type="text">
+    <span class="text-danger d-none">Enter a valid email address</span>
+    <span class="signUpEmailError text-danger d-none">email already exists</span>
+    <input oninput="validateSignUp(this)" id="signUpPassword" class="form-control my-3 text-light" placeholder="Enter your Password" type="password">
+<span class="text-danger d-none">Password must be 8+ chars, with uppercase, lowercase, number & symbol</span>
+<span class="text-success d-none">Success</span>
+    <button onclick="run()" id="signUpBtn" class="btn btn-outline-info w-100 my-3">Sign Up</button>
+    <p class="text-white">have an account? <a class="text-white" href="./index.html">Signin</a></p>
+  </div>
+</div>
+
+
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

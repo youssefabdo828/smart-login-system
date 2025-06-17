@@ -1,0 +1,63 @@
+body{
+    background-color: #24353f;
+    font-family: "Titillium Web", sans-serif;
+}
+
+.card{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+    background-color: #24353f;
+}
+
+#welcomeCard span{
+        color: #17a2b8;
+}
+
+h1{
+    color: #17a2b8;
+    font-weight: 500;
+}
+
+#card input{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #ced4da;
+}
+
+#card input::placeholder{
+    color: #ced4da;
+}
+
+#card .form-control:focus {
+    color: #495057;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25);
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+nav .navbar-collapse {
+    flex-grow: 0;
+}
+
+nav a:hover{
+    text-decoration: none;
+}
+
+nav .btn-outline-warning {
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    background-image: none;
+    border-color: #ffc107;
+}
